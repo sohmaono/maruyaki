@@ -1,0 +1,42 @@
+.picture1{
+    background-image: url(./profile-pic1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.picture2{
+    background-image: url(./profile-pic2.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.picture3{
+    background-image: url(./profile-pic3.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.picture4{
+    background-image: url(./profile-pic4.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.picture5{
+    background-image: url(./profile-pic5.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.picture6{
+    background-image: url(./profile-pic6.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}

@@ -1,15 +1,18 @@
 .container{
-    background-color: rgb(255, 255, 255);
-    margin: 10px 18%;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    flex: 0 0 500px;
 }
 .content{
     display: flex;
     flex-direction: column;
-    gap: 11px;
-    width: 55vw;
+    gap: 15px;
+    width: 58%;
+    height: calc(100vh - 51px);
+    overflow-y: scroll;
+    padding: 10px;
+    flex: 0 1 700px;
 }
+.content::-webkit-scrollbar{
+    display: none;
+  }
