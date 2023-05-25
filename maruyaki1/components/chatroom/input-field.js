@@ -11,11 +11,9 @@ export const InputField=memo(({doSend})=>{
 
     return(
     <div className={style.container}>
-        <div className={style.container2}>
-            <div className={style.inputSendingButton}>
-                <textarea type="text" ref={chatInputRef} className={style.inputField}/>
-                <button onClick={doSendClick} className={style.sendingButton}><SendingButton/></button>
-            </div>
+        <div className={style.inputSendingButton}>
+            <textarea type="text" ref={chatInputRef} placeholder="入力..." className={style.inputField}/>
+            <button onClick={doSendClick} className={style.sendingButton}><SendingButton/></button>
         </div>
     </div>
     )

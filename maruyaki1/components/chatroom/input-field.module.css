@@ -4,33 +4,49 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
+    box-sizing: border-box;
+    height: 49px;
+    /* background: linear-gradient(180deg,rgba(255,255,255,0%),rgba(255, 255, 255, 5%) 25%,rgba(255, 255, 255, 100%)); */
 }
-.container2{
+.inputSendingButton{
     display: flex;
-    flex-direction: column;
-    width: 75%;
     align-items: center;
+    margin-bottom: 9px;
+    border:2px solid rgb(178, 196, 198);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    flex: 0 1 427px;
 }
 .inputField{
     display: flex;
-    background:rgb(206, 206, 206);
-    border-radius: 15px;
-    width: 100%;
+    width: 105%;
     height: 40px;
     overflow-wrap: break-word;
     word-break: break-all;
     resize: none;
-    padding: 10px;
+    padding: 11px 0 10px 17px;
 }
+.inputField::-webkit-scrollbar{
+    display: none;
+  }
+.inputField::placeholder {
+    color: rgb(198, 198, 198);
+    /* font-style:italic; */
+  }
+
 .sendingButton{
-    overflow: hidden;
     height: 30px;
-    width: 30px;
+    width: 37px;
+    padding: 4px;
+    transition: 0.15s;
+    margin: 0 5px;
+    position: relative;
+    top: 0.5px;
+    right: 3px;
 }
-.inputSendingButton{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    width: 50%;
-    margin-bottom: 10px;
+.sendingButton:hover{
+    background-color: rgb(220, 253, 255);
+    border-radius: 10px;
+    transition: 0.15s;
+
 }

@@ -17,20 +17,21 @@ export const Message=memo(({object={}})=>{
     return(
         object.person==4?
         <div className={style.containerSelf}>
-            <time className={style.time}>{object.time}</time>
-            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end"}}>
-                <name className={style.name}>{nameArray[object.person-1]}</name>
+            <time className={style.timeSelf}>{object.time}</time>
+            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:"2px"}}>
+                {/* <name className={style.name}>{nameArray[object.person-1]}</name> */}
                 <div className={style.contentSelf}>{object.content}</div>
             </div>
             <div className={style.pictureContainer}>
                 <pic>{pictureArray[object.person-1]}</pic>
             </div>
-        </div>:
+        </div>
+        :
         <div className={style.containerOther}>
             <div className={style.pictureContainer}>
                 <pic>{pictureArray[object.person-1]}</pic>
             </div>
-            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start"}}>
+            <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",gap:"2px"}}>
                 <name className={style.name}>{nameArray[object.person-1]}</name>
                 <div className={style.contentOther}>{object.content}</div>
             </div>
