@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.nextButton{
+    background-image: url(../../pictures/next-button.png);
+    background-size: cover;
+    background-position: center center;
+    height: 40px;
+    width: 40px;
+}
+.likeButtons{
+    display: flex;
+    justify-content: space-around;
+}
+.nextButtonContainer{
+    align-self: center;
+    padding: 8px;
+    border-radius: 15px;
+    /* border: 1.5px solid rgb(224, 224, 224); */
+    background-color: rgba(243, 243, 243, 0.9);
+    transition-duration: 0.3s;
+}
+.nextButtonContainer:hover{
+    padding: 9px;
+    margin-top: -.5px;
+    transition-duration: 0.3s;
+}
+
+
+
+.liked{
+    background-image: url(../../pictures/heartheart.png);
+    background-size: cover;
+    background-position: center center;
+    height: 25px;
+    width: 25px;
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.nonLiked{
+    background-image: url(../../pictures/heart.png);
+    background-size: cover;
+    background-position: center center;
+    height: 25px;
+    width: 25px;
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.disLiked{
+    background-image: url(../../pictures/badbad.png);
+    background-size: cover;
+    background-position: center center;
+    height: 26px;
+    width: 26px;
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.nonDisLiked{
+    background-image: url(../../pictures/bad.png);
+    background-size: cover;
+    background-position: center center;
+    height: 26px;
+    width: 26px;
+    animation-name:fadeInAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+.text{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+.inputName{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.input{
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 20px;
+    width: 60%;
+    background-color: rgba(243, 243, 243, 0.8);
+}
+.name{
+    font-weight: 700;
+    font-size: 18px;
+}
