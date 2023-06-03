@@ -50,7 +50,7 @@ export default function MessageMap(){
     return(
         message?
         <div className={style.container}>
-            {message}
+            {message}{/* ← この部分はmessage.jsの部分 */}
             <div className={style.likeButtons}>
                 <button onClick={disLikeButton}>{disLike?<div className={style.disLiked}></div>:<div className={style.nonDisLiked}></div>}</button>
                 <button onClick={likeButton}>{like?<div className={style.liked}></div>:<div className={style.nonLiked}></div>}</button>

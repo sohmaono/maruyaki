@@ -5,8 +5,8 @@ import Header from "../../components/others/header";
 export default function MessageRoomPage(){
     return(
         <div>
-            <Header/>
-            <MessageMap/>
+            <Header/>{/* ← この部分はcomponents/others/headerのコンポーネント */}
+            <MessageMap/>{/* ← この部分はcomponents/message/message-mapの部分 */}
         </div>
 
     )

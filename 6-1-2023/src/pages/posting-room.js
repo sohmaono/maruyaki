@@ -5,8 +5,8 @@ import Header from "../../components/others/header";
 function PostingRoom(){
     return(
         <div>
-            <Header/>
-            <PostingInput/>
+            <Header/>{/* ← この部分はcomponents/others/headerのコンポーネント */}
+            <PostingInput/>{/* ← この部分はcomponents/posting/posting-input.jsの部分 */}
         </div>
     )
 }
